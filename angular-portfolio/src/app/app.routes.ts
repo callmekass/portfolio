@@ -12,18 +12,22 @@ export const routes: Routes = [
   },
   {
     path: 'home',
+    pathMatch: 'full',
     redirectTo: '',
   },
   {
     path: 'projects',
+    pathMatch: 'full',
     component: ProjectsComponent,
   },
   {
     path: 'blog',
+    pathMatch: 'full',
     component: BlogComponent,
   },
   {
     path: 'contact',
+    pathMatch: 'full',
     component: ContactComponent,
   },
 ];
