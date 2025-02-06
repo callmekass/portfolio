@@ -1,6 +1,8 @@
 $black: #000;
+$light-black: #282828;
 $white: #fff;
-$border-width: 1px;
+$border-width: 4px;
+$link-underline-color: #0079a880;
 $font-size: 1.25rem;
 $logo-font-size: 1.75rem;
 
@@ -8,13 +10,14 @@ $logo-font-size: 1.75rem;
   padding: 0.75rem 1.5rem;
   background-color: $white;
   display: flex;
-  justify-content: space-between;
 }
 
 .nav {
   display: flex;
   align-items: center;
   font-size: $font-size;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .nav ul {
@@ -24,19 +27,23 @@ $logo-font-size: 1.75rem;
 
 .logo,
 .nav-link,
-.nav-button {
+.nav-button,
+.contact {
   display: flex;
   text-decoration: none;
+}
+
+.logo,
+.nav-link,
+.nav-button {
   color: $black;
 }
 
 .logo {
   font-size: $logo-font-size;
-  color: $black;
-  border: 2px solid $black;
-  border-radius: 4px;
   padding: 4px;
-  font-weight: 400;
+  font-weight: 600;
+  color: $light-black;
 }
 
 .nav-link {
@@ -44,19 +51,33 @@ $logo-font-size: 1.75rem;
 }
 
 .nav-link {
+  padding-top: $border-width;
   border-bottom: $border-width solid $white;
-  padding: 0.125rem 0rem;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 1rem;
 }
 
 .nav-link:hover,
 .nav-link:active {
-  border-bottom: $border-width solid $black;
+  border-bottom: $border-width solid $link-underline-color;
   color: $black;
+}
+
+.contact {
+  font-size: $font-size;
+  background-color: $light-black;
+  color: $white;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 1rem;
+}
+
+.contact:hover,
+.contact:active {
+  background-color: $black;
 }
 
 .logo:hover,
 .logo:active {
   color: $black;
-  border-color: $black;
 }
