@@ -1,7 +1,6 @@
 .header {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   background-color: #f8f9fa;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header nav {
@@ -18,10 +17,29 @@ ul {
 a {
   text-decoration: none;
   color: #000;
-  padding: 0.5rem 1rem;
+  padding: 0.125rem 0rem;
+}
+
+ul li a {
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  border-bottom: 1px solid #fff;
 }
 
 .logo {
   font-size: 1.5rem;
-  font-weight: 700;
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 4px;
+  font-weight: 500;
+}
+
+.logo:hover,
+.logo:active {
+  background-color: #fafafa;
+}
+
+ul li a:hover,
+ul li a:active {
+  border-bottom: 2px solid #000;
 }
