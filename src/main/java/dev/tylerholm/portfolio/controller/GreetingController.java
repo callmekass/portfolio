@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class GreetingController {
 
   @GetMapping("/api/greeting")
-  public String getMethodName() {
+  public String getGreeting() {
       return "Hello World!";
   }
   
