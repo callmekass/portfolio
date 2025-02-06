@@ -6,8 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:angular-portfolio": "node dist/angular-portfolio/server/server.mjs"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +19,6 @@
     "@angular/platform-browser-dynamic": "^19.1.0",
     "@angular/platform-server": "^19.1.0",
     "@angular/router": "^19.1.0",
-    "@angular/ssr": "^19.1.6",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
