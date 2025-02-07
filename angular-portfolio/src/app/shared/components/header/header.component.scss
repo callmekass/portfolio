@@ -1,19 +1,16 @@
 @import "../../../../variables.scss";
 
 $border-width: 2px;
-$font-size: 1.25rem;
-$logo-font-size: 1.75rem;
 
 .header {
   padding: 0.875rem 1.5rem;
-  background-color: $white;
   display: flex;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  font-size: $font-size;
+  font-size: $font-size-lg;
   justify-content: space-between;
   width: 100%;
 }
@@ -32,7 +29,7 @@ $logo-font-size: 1.75rem;
 }
 
 .logo {
-  font-size: $logo-font-size;
+  font-size: $font-size-xl;
   padding: 4px;
   font-weight: 500;
 }
@@ -42,7 +39,6 @@ $logo-font-size: 1.75rem;
 }
 
 .nav-link {
-  font-size: $font-size;
   background-color: $white;
   color: $black;
   padding: 6px 12px;
@@ -50,7 +46,6 @@ $logo-font-size: 1.75rem;
 }
 
 .contact {
-  font-size: $font-size;
   background-color: $black;
   color: $white;
   padding: 6px 12px;
