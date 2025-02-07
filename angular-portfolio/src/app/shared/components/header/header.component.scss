@@ -1,13 +1,11 @@
-$black: #000;
-$light-black: #282828;
-$white: #fff;
-$border-width: 4px;
-$link-underline-color: #0079a880;
+@import "../../../../variables.scss";
+
+$border-width: 2px;
 $font-size: 1.25rem;
 $logo-font-size: 1.75rem;
 
 .header {
-  padding: 0.75rem 1.5rem;
+  padding: 0.875rem 1.5rem;
   background-color: $white;
   display: flex;
 }
@@ -33,51 +31,44 @@ $logo-font-size: 1.75rem;
   text-decoration: none;
 }
 
-.logo,
-.nav-link,
-.nav-button {
-  color: $black;
-}
-
 .logo {
   font-size: $logo-font-size;
   padding: 4px;
-  font-weight: 600;
-  color: $light-black;
-}
-
-.nav-link {
-  margin-left: 1.25rem;
-}
-
-.nav-link {
-  padding-top: $border-width;
-  border-bottom: $border-width solid $white;
   font-weight: 500;
-  line-height: 1rem;
 }
 
-.nav-link:hover,
-.nav-link:active {
-  border-bottom: $border-width solid $link-underline-color;
+.nav-link {
+  margin-left: 8px;
+}
+
+.nav-link {
+  font-size: $font-size;
+  background-color: $white;
   color: $black;
+  padding: 6px 12px;
+  border-radius: 999px;
 }
 
 .contact {
   font-size: $font-size;
-  background-color: $light-black;
+  background-color: $black;
   color: $white;
-  font-weight: 500;
-  padding: 0.3rem 0.75rem;
-  border-radius: 1rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: $contrast-black;
+  background-color: $light-gray;
 }
 
 .contact:hover,
 .contact:active {
-  background-color: $black;
+  background-color: $contrast-black;
 }
 
 .logo:hover,
 .logo:active {
-  color: $black;
+  color: $contrast-black;
 }
