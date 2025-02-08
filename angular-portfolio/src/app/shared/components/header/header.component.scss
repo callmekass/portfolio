@@ -53,7 +53,6 @@ $border-width: 2px;
 
 .nav-link {
   margin-left: 24px;
-  border-bottom: 1px solid $black;
 }
 
 .contact {
@@ -64,6 +63,7 @@ $border-width: 2px;
 
 .logo:hover,
 .logo:active {
+  color: $contrast-black;
   background-color: $white;
 }
 
@@ -74,7 +74,7 @@ $border-width: 2px;
 
 .contact:hover,
 .contact:active {
-  color: $black;
+  color: $contrast-black;
   background-color: $white;
   border-color: $white;
 }
