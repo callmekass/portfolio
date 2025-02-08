@@ -3,6 +3,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 export const routes: Routes = [
   {
@@ -30,4 +31,6 @@ export const routes: Routes = [
     pathMatch: 'full',
     component: ContactComponent,
   },
+  { path: 'error/404', component: NotFoundComponent },
+  { path: '**', redirectTo: 'error/404' },
 ];
