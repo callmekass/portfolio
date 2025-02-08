@@ -5,6 +5,9 @@ $border-width: 2px;
 .header {
   padding: 0.875rem 1.5rem;
   display: flex;
+  background-color: $black;
+  align-content: center;
+  align-items: center;
 }
 
 .nav {
@@ -26,44 +29,52 @@ $border-width: 2px;
 .contact {
   display: flex;
   text-decoration: none;
+  transition: all 0.125s ease-out;
+}
+
+.nav-link,
+.nav-button,
+.contact {
+  color: $light-gray;
 }
 
 .logo {
   font-size: $font-size-xl;
-  padding: 4px;
-  font-weight: 500;
-}
-
-.nav-link {
-  margin-left: 8px;
-}
-
-.nav-link {
-  background-color: $white;
   color: $black;
-  padding: 6px 12px;
+  font-weight: 700;
+  padding: 4px;
+  height: 38px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
   border-radius: 999px;
-}
-
-.contact {
-  background-color: $black;
-  color: $white;
-  padding: 6px 12px;
-  border-radius: 999px;
-}
-
-.nav-link:hover,
-.nav-link:active {
-  color: $contrast-black;
   background-color: $light-gray;
 }
 
-.contact:hover,
-.contact:active {
-  background-color: $contrast-black;
+.nav-link {
+  margin-left: 24px;
+  border-bottom: 1px solid $black;
+}
+
+.contact {
+  padding: 6px 12px;
+  border: 2px solid $light-gray;
+  border-radius: 999px;
 }
 
 .logo:hover,
 .logo:active {
-  color: $contrast-black;
+  background-color: $white;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: $white;
+}
+
+.contact:hover,
+.contact:active {
+  color: $black;
+  background-color: $white;
+  border-color: $white;
 }
