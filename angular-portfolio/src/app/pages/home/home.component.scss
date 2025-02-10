@@ -23,7 +23,7 @@
 #name {
   font-size: 4rem;
   font-weight: 600;
-  background: -webkit-linear-gradient(45deg, #5579ee, #43a162);
+  background: -webkit-linear-gradient(45deg, $blue, $green);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
@@ -60,15 +60,11 @@
   display: inline-flex;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  background: linear-gradient(135deg, #ffffff20, #ffffff40);
-  align-items: center;
-  height: fit-content;
-  width: fit-content;
 }
 
 .icon:hover,
 .icon:focus {
-  background: linear-gradient(135deg, #ffffff30, #ffffff50);
+  background: linear-gradient(135deg, rgba($white, 0.15), rgba($white, 0.25));
 }
 
 @media screen and (max-width: 800px) {
