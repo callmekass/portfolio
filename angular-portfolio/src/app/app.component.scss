@@ -1,5 +1,5 @@
 @use "../variables.scss" as *;
 
 .page-container {
-  min-height: calc(100dvh - ($header-height + $footer-height));
+  min-height: calc(100lvh - ($header-height + $footer-height));
 }

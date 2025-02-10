@@ -26,7 +26,7 @@
   padding-top: 3rem;
   align-items: center;
   display: flex;
-  height: calc(100dvh - $header-height);
+  height: calc(100lvh - $header-height);
   margin: 0rem 2rem;
   display: flex;
   flex-direction: column;
@@ -153,7 +153,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 2rem 0rem;
-  min-height: calc(100dvh - $footer-height);
+  min-height: calc(100lvh - $footer-height);
 }
 
 .cards {
