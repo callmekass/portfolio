@@ -1,0 +1,29 @@
+@use "../../../variables.scss" as *;
+
+#home {
+  margin: 0 2rem;
+}
+
+#id {
+  width: 100%;
+}
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 4rem 0rem;
+}
+
+#name {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+#landing-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
