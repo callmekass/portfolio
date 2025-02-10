@@ -54,23 +54,23 @@
 }
 
 .card {
+  padding: 1rem;
   margin: 0;
   height: fit-content;
   display: flex;
   flex-direction: column;
   background: linear-gradient(135deg, rgba($white, 0.1), rgba($white, 0.07));
   border-radius: $border-radius;
-  min-width: 300px;
-  padding-bottom: 0.5rem;
+  width: 300px;
+  height: 400px;
 }
 
 .card-title {
-  padding: 0.5rem 1rem;
   font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .card-body {
-  padding: 0rem 1rem;
 }
 
 .socials {
@@ -148,14 +148,27 @@
 
 #projects {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: start;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   padding: 2rem 0rem;
   min-height: calc(100dvh - $footer-height);
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 800px) {
@@ -170,11 +183,15 @@
   }
 
   #projects {
-    flex-direction: column;
-    justify-content: start;
+    align-items: start;
   }
 
   .card {
+    width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
     width: 100%;
   }
 
