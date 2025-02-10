@@ -18,6 +18,7 @@ $border-width: 1px;
   text-decoration: none;
   font-weight: 800;
   font-size: 2rem;
+  color: $light-gray;
 }
 
 li:not(:last-child) {
@@ -44,6 +45,11 @@ li:not(:last-child) {
 
 .nav-link {
   padding: 4px;
+}
+
+.logo:hover,
+.logo:active {
+  color: $white;
 }
 
 .nav-link:hover,
