@@ -6,6 +6,7 @@ import {
   faLinkedinIn,
   faBluesky,
 } from '@fortawesome/free-brands-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,6 @@ import {
 })
 export class HomeComponent {
   constructor(library: FaIconLibrary) {
-    library.addIcons(faGithub, faLinkedinIn, faBluesky);
+    library.addIcons(faGithub, faLinkedinIn, faBluesky, faChevronDown);
   }
 }

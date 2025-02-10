@@ -8,6 +8,10 @@
   color: $light-gray;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $bg-color;
 }
