@@ -2,31 +2,41 @@
 
 #home {
   margin: 0 2rem;
-}
-
-.landing-divider {
-  width: 200px;
-  border-bottom: 2px solid $white;
-}
-
-#id {
-  width: 100%;
-}
-
-#landing {
+  align-items: center;
+  justify-content: center;
   display: flex;
-  flex-direction: row;
-  height: 100%;
-  padding: 4rem 0rem;
+  flex-direction: column;
 }
 
-#name {
-  font-size: 4rem;
-  font-weight: 600;
+.pretty-text {
   background: -webkit-linear-gradient(45deg, $blue, $green);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: fit-content;
+}
+
+.landing-divider {
+  width: 100%;
+  display: block;
+  height: 2px;
+  background: linear-gradient(to right, $blue, $green);
+  max-width: 400px;
+}
+
+#landing {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin: 0rem 2rem;
+  padding: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+#name {
+  font-size: 5rem;
+  font-weight: 600;
 }
 
 #landing-title {
@@ -35,17 +45,31 @@
   margin: 0.5rem 0;
 }
 
-#land-col-1 {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  padding: 0rem 1rem;
+#landing-about {
+  font-size: $font-size-lg;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  text-align: center;
 }
 
-#land-col-2 {
+.card {
+  margin: 0;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem;
+  background: linear-gradient(135deg, rgba($white, 0.15), rgba($white, 0.25));
+  border-radius: $border-radius;
+  min-width: 300px;
+  padding-bottom: 0.5rem;
+}
+
+.card-title {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 0rem 1rem;
 }
 
 .socials {
@@ -59,7 +83,33 @@
 .icon {
   display: inline-flex;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: $border-radius;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+#landing-contact {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.contact-btn {
+  background: linear-gradient($bg-color 0 0) padding-box,
+    /*this is your grey background*/ linear-gradient(to right, $blue, $green)
+      border-box;
+  padding: 10px;
+  border-color: transparent;
+  border-radius: $border-radius;
+  border-width: 4px;
+  border-style: solid;
+  padding: 0.5rem 4rem;
+}
+
+.contact-btn .pretty-text {
+  font-size: $font-size-lg;
+  font-weight: 500;
 }
 
 .icon:hover,
@@ -67,18 +117,46 @@
   background: linear-gradient(135deg, rgba($white, 0.15), rgba($white, 0.25));
 }
 
+.contact-btn:hover,
+.contact-btn:active {
+  background: linear-gradient(to right, $blue 0 0, $green) padding-box,
+    /*this is your grey background*/ linear-gradient(to right, $blue, $green)
+      border-box;
+
+  .pretty-text {
+    color: $white;
+    -webkit-text-fill-color: $white;
+  }
+}
+
+#card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 @media screen and (max-width: 800px) {
   #landing {
+    margin: 0rem 0rem;
+    justify-content: start;
+    align-items: start;
+  }
+
+  #landing-about {
+    text-align: start;
+  }
+
+  #card-content {
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
   }
 
-  #land-col-1 {
+  .card {
     width: 100%;
-    padding: 0;
-  }
-
-  #land-col-2 {
-    width: 100%;
-    padding: 1rem 0rem;
   }
 }
