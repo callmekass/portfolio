@@ -4,6 +4,11 @@
   margin: 0 2rem;
 }
 
+.landing-divider {
+  width: 240px;
+  border-bottom: 4px solid $white;
+}
+
 #id {
   width: 100%;
 }
@@ -11,8 +16,6 @@
 #landing {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   padding: 4rem 0rem;
 }
@@ -20,6 +23,7 @@
 #name {
   font-size: 4rem;
   font-weight: 600;
+  color: #6a75da;
 }
 
 #landing-title {
