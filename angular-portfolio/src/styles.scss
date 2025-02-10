@@ -5,7 +5,11 @@
   margin: 0;
   font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  color: $black;
+  color: $light-gray;
+}
+
+body {
+  background-color: $bg-color;
 }
 
 .bg-primary {

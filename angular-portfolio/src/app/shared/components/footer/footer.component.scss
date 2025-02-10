@@ -1,10 +1,12 @@
 @use "../../../../variables.scss" as *;
 
 .footer {
-  padding: 0.875rem 1.5rem;
+  padding: 0 2rem;
+  align-items: center;
   display: flex;
   font-size: $font-size-xs;
   justify-content: space-between;
+  height: $footer-height;
 }
 
 nav ul {
@@ -18,7 +20,7 @@ nav ul li:not(:first-child) {
 
 a:hover,
 a:active {
-  color: $contrast-black;
+  color: $white;
   text-decoration: underline;
   cursor: pointer;
 }
