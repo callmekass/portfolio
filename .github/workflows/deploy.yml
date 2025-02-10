@@ -1,0 +1,17 @@
+name: Deploy
+
+on:
+  push:
+    tags:
+      - 'PRD*'
+
+jobs:
+  build:
+    name: Build and Deploy
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Angular and Spring Boot
+        run: ./build.sh
+      - name: Deploy to Production
+        run: ./deploy.sh

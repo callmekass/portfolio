@@ -1,4 +1,4 @@
-name: Build
+name: Test & Build
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  test:
     name: Build and analyze
     runs-on: self-hosted
 
@@ -25,11 +25,10 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-  deploy-to-server:
-    name: Deploy to server
+  build:
+    name: Build
     runs-on: self-hosted
-
     steps:
       - uses: actions/checkout@v4
-      - name: Deploy to server
+      - name: Build Angular and Spring Boot
         run: ./build.sh
